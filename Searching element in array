@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args)
+    {
+        //Write your code
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int []arr= new int[size];
+        
+        for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+        }int a = sc.nextInt();
+        for(int i=0;i<size;i++){
+            if(arr[i]==a){
+                System.out.println(a +" is present in the array");
+                return;
+            }
+        }
+        for(int i=0;i<size;i++){
+            if(arr[i]!=a){
+                System.out.println(a +" is not present in the array");
+                return;
+            }    
+    }System.out.println(-1);
+}
+    
+}
